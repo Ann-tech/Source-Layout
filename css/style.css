@@ -1,0 +1,383 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+nav {
+  padding: 1rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+ul {
+  list-style-type: none;
+  width: 50%;
+  float: left;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #a4b0bc;
+}
+
+.button-link .nav-item {
+  background: #304659;
+  color: #d1d8dd;
+  padding: 0.8rem 1.5rem;
+}
+
+.source-nav-item > .nav-item {
+  color: #2e4357;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.hamburger-icon {
+  float: left;
+  width: 50%;
+  margin-top: 5.5px;
+}
+
+
+
+.hide-nav-item {
+  display: none;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+main > section {
+  padding: 0 2rem;
+}
+
+main, header {
+  background: #f5f9fc;
+}
+
+
+
+.info-section {
+  background: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info-section > div {
+  background:  #e1e9f0;
+  width: 100%;
+  height: 150px;
+  margin-top: 2rem;
+}
+
+.tag-text {
+  text-transform: uppercase;
+  color: #a3b4c2;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+
+
+h1 {
+  font-size: 3.2rem;
+  color: #31475a;
+}
+
+form > .enter-text {
+  background: #e1e9f0;
+  border: none;
+}
+
+form > .submit-text {
+  background: #304659;
+  border: none;
+  color: #ecf1f5;
+}
+
+form > .enter-text,
+form > .submit-text {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.laptop-img {
+  position: relative;
+  right: -2rem;
+  width: 80%;
+  float: right;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+h2 {
+  color: #364b5c;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+
+.feature-section {
+  clear: both;
+
+}
+
+.feature-section section {
+  padding: 1rem;
+}
+
+.info-section h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  color: #304659;
+
+}
+
+p {
+  line-height: 1.2;
+  color: #5e7182;
+}
+
+.top-text {
+  margin-top: 2rem;
+}
+
+.each-p {
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.each-p svg {
+  position: absolute;
+  top:15%;
+}
+.each-p-link {
+  color: #364b5c;
+  text-decoration: none;
+}
+
+
+
+footer {
+
+}
+
+@media screen and (min-width: 568px) {
+  .top-section {
+    width: 50%;
+    float: left;
+  }
+
+  .laptop-img {
+    width: 40%;
+    height: 200px;
+    margin-top: 10rem;
+    float: right;
+  }
+
+  
+}
+
+@media screen and (min-width: 700px) {
+  .top-section {
+    width: 60%;
+    float: left;
+  }
+
+  .laptop-img {
+    width: 40%;
+    height: auto;
+    float: right;
+  }
+
+  h1 {
+    max-width: 70%;
+    font-size: 3rem;
+  }
+
+  form > .enter-text,
+  form > .submit-text {
+    display: inline-block;
+  }
+
+  form > .submit-text {
+    width: 20%;
+  }
+
+  form > .enter-text {
+    width: 80%;
+  }
+
+
+  form {
+    width: 80%;
+  }
+
+  .feature-section {
+    padding: 3rem 0;
+  }
+
+  .feature-section > section {
+    width: 24%;
+    padding-right: 2rem;
+    float: left;
+    position: relative;
+    height: 215px;
+  }
+
+  .each-p {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .each-p svg {
+    position: absolute;
+    top:15%;
+  }
+
+  main {
+    padding: 0;
+  }
+  
+/* 
+  form > .enter-text,
+  form > .submit-text {
+    width: 80%;
+  } */
+}
+
+@media screen and (min-width: 744px) {
+  ul {
+    width: 100%;
+  }
+
+  .hide-nav-item {
+    display: block;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .source-nav-item {
+    float: left;
+    width: 30%;
+  }
+
+  .all-links {
+    width: 60%;
+    float: left;
+  }
+
+  .button-link {
+    width: 10%;
+    float: right;
+    text-align: right;
+  }
+
+  .all-links > li {
+    float: left;
+    padding-right: 3rem;
+  }
+
+  nav {
+    border-bottom: none;
+    padding: 2rem;
+  }
+
+  main > section {
+    padding-left: 6rem;
+  }
+
+  .info-section {
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .all-links > li {
+    padding-right: 4rem;
+  }
+
+  .feature-section > section {
+    height: 178px;
+  }
+
+  main > section:nth-of-type(1) {
+    padding-top: 2rem;
+  }
+  main > section {
+    padding-left: 8rem;
+  }
+
+  .info-section {
+    padding-right: 8rem;
+  }
+
+  form > .enter-text, 
+  form > .submit-text {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .top-text {
+    max-width: 70%;
+  }
+
+  .top-section {
+    padding-top: 2rem;
+    width: 50%;
+  }
+
+  .laptop-img {
+    width: 50%;
+  }
+
+  .laptop-img {
+    margin-top: 0;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
